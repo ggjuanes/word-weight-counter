@@ -4,3 +4,4 @@
  * This file has to be included in the main .ts scripts
  * And it will load all dependencies automatically.
  */
+import "../../../Word/Module/Counter/Infrastructure/DependencyInjection/container.config";

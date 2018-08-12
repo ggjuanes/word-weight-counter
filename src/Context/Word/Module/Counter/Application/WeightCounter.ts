@@ -1,14 +1,18 @@
+import { inject, injectable } from "inversify";
+import "reflect-metadata";
+import IWeightCounter from "../Domain/IWeightCounter";
 import IWeightSelector from "../Domain/IWeightSelector";
 import Letter from "../Domain/Letter";
 import Word from "../Domain/Word";
+import SERVICES from "../Infrastructure/DependencyInjection/services";
 import WeightSelectorJson from "../Infrastructure/WeightSelectorJson";
 
-export default class WeightCounter {
+@injectable()
+export default class WeightCounter implements IWeightCounter {
   private weightSelector: IWeightSelector;
 
-  constructor() {
-    /** @TODO: add inversify to remove this dependency */
-    this.weightSelector = new WeightSelectorJson();
+  constructor(@inject(SERVICES.IWeightSelector) weightSelector: IWeightSelector) {
+    this.weightSelector = weightSelector;
   }
 
   public count(word: Word): number {

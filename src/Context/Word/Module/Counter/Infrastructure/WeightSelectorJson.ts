@@ -1,9 +1,12 @@
+import { injectable } from "inversify";
+import "reflect-metadata";
 import IWeightSelector from "../Domain/IWeightSelector";
 import Letter from "../Domain/Letter";
 
 /**
  * @TODO: add test for WeightSelectorJson
  */
+@injectable()
 export default class WeightSelectorJson implements IWeightSelector {
   private alphabet: any;
 
