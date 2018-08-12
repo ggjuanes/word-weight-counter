@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import * as faker from "faker";
+import * as mocha from "mocha";
 import StringValueObject from "./StringValueObject";
 import StringValueObjectStub from "./StringValueObjectStub";
 
