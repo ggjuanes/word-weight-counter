@@ -5,7 +5,14 @@
   "author": "Guillermo Garcia Juanes",
   "license": "MIT",
   "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/faker": "^4.1.2",
+    "@types/mocha": "^5.2.5",
     "@types/node": "^10.5.8",
+    "chai": "^4.1.2",
+    "faker": "^4.1.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.0.1"
   },
@@ -13,6 +20,8 @@
     "build": "tsc && yarn run lint",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "tsc": "tsc",
-    "hello-world": "node dist/app.js"
-  }
+    "hello-world": "node dist/app.js",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+  },
+  "dependencies": {}
 }
