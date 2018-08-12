@@ -10,10 +10,7 @@ class WeightSelectorStub implements IWeightSelector {
     return letter.getValue().charCodeAt(0);
   }
 }
-/**
- * @TODO: mock WeightSelectorJson
- * increate test coverage
- */
+
 describe("WeightCounter", () => {
   it("when empty string sent, then it should return 0", () => {
     const weightCounter = new WeightCounter(new WeightSelectorStub());
