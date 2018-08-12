@@ -1,9 +1,12 @@
 {
   "name": "word-weight-counter",
   "version": "0.0.1",
-  "main": "app.js",
+  "main": "./Context/Word/Module/Counter/Infrastructure/app.js",
   "author": "Guillermo Garcia Juanes",
   "license": "MIT",
+  "bin": {
+    "word-weight-counter": "./bin/word-weight-counter"
+  },
   "engines": {
     "node": ">=8"
   },
@@ -23,7 +26,6 @@
     "build": "tsc && yarn run lint",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "tsc": "tsc",
-    "hello-world": "node dist/app.js",
     "test": "mocha -r ts-node/register src/**/*.spec.ts"
   },
   "dependencies": {
