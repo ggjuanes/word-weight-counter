@@ -2,7 +2,7 @@ version: '3'
 services:
   dev:
     image: "ggjuanes/node-dev:0.0.1"
-    container_name: bootstrap-node-project
+    container_name: word-weight-counter
     tty: true
     volumes:
       - .:/var/development/workspace:cached

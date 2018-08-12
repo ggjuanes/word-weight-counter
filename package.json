@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-node-project",
+  "name": "word-weight-counter",
   "version": "0.0.1",
   "main": "app.js",
   "author": "Guillermo Garcia Juanes",
