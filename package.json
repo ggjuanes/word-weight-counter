@@ -4,8 +4,8 @@
   "main": "app.js",
   "author": "Guillermo Garcia Juanes",
   "license": "MIT",
-  "engines" : {
-    "node" : ">=8" 
+  "engines": {
+    "node": ">=8"
   },
   "devDependencies": {
     "@types/chai": "^4.1.4",
@@ -26,5 +26,8 @@
     "hello-world": "node dist/app.js",
     "test": "mocha -r ts-node/register src/**/*.spec.ts"
   },
-  "dependencies": {}
+  "dependencies": {
+    "inversify": "^4.13.0",
+    "reflect-metadata": "^0.1.12"
+  }
 }
